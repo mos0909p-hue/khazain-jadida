@@ -4,68 +4,67 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>خزائن غرف نوم عصرية - الرياض</title>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box} body{margin:0;font-family:'Tajawal',Tahoma;background:#fdfaf5;color:#222}
-header{background:linear-gradient(135deg,#0a1931 0%,#1a3a5f 100%);color:#fff;padding:45px 20px;text-align:center;position:relative;overflow:hidden}
-header::after{content:'';position:absolute;top:-50%;left:-20%;width:140%;height:200%;background:radial-gradient(ellipse at center,rgba(200,169,81,.15) 0%,transparent 70%)}
-header h1{margin:0;font-size:36px;font-weight:800;position:relative;z-index:1;letter-spacing:.5px}
-header .gold-line{width:80px;height:3px;background:linear-gradient(90deg,#c8a951,#e8d5a3);margin:15px auto;border-radius:2px}
-header p{margin:0;font-size:18px;opacity:.92;position:relative;z-index:1}
+header{background:linear-gradient(135deg,#0a1931,#1a3a5f);color:#fff;padding:50px 20px;text-align:center;position:relative;overflow:hidden}
+header::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(200,169,81,.18) 0%,transparent 70%)}
+header h1{margin:0;font-size:38px;font-weight:800;position:relative;z-index:1}
+.gold-line{width:90px;height:4px;background:linear-gradient(90deg,#c8a951,#e8d5a3);margin:16px auto;border-radius:2px}
+header p{margin:0;font-size:19px;opacity:.92;position:relative;z-index:1}
+.offer-badge{display:inline-block;margin-top:18px;background:linear-gradient(90deg,#ff2d2d,#ff7a7a);color:#fff;padding:10px 22px;border-radius:30px;font-weight:800;font-size:18px;position:relative;z-index:1;animation:pulse 1.5s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.08)}100%{transform:scale(1)}}
 .badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px;position:relative;z-index:1}
-.badges span{background:rgba(255,255,255,.12);border:1px solid rgba(200,169,81,.4);padding:8px 16px;border-radius:30px;font-size:13px;backdrop-filter:blur(4px)}
-.hero-cta{display:inline-block;margin-top:25px;background:linear-gradient(90deg,#c8a951,#e8d5a3);color:#0a1931;padding:14px 32px;border-radius:30px;text-decoration:none;font-weight:800;font-size:16px;position:relative;z-index:1;box-shadow:0 8px 20px rgba(200,169,81,.35)}
+.badges span{background:rgba(255,255,255,.12);border:1px solid rgba(200,169,81,.4);padding:8px 16px;border-radius:30px;font-size:13px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;padding:30px 18px;max-width:1280px;margin:auto}
-.card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 10px 30px rgba(10,25,49,.08);border:1px solid rgba(200,169,81,.15);transition:.4s}
+.card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 10px 30px rgba(10,25,49,.08);border:1px solid rgba(200,169,81,.15);transition:.4s;position:relative}
 .card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(10,25,49,.15)}
+.card .discount{position:absolute;top:14px;left:14px;background:linear-gradient(135deg,#ff1a1a,#ff5a5a);color:#fff;padding:7px 14px;border-radius:30px;font-weight:800;font-size:14px;z-index:2;box-shadow:0 4px 12px rgba(255,0,0,.35)}
 .card img{width:100%;height:380px;object-fit:cover;display:block}
 .info{padding:18px;text-align:center}
 .info h3{margin:0 0 8px;color:#0a1931;font-size:19px;font-weight:700}
 .info .desc{color:#777;font-size:13px;margin-bottom:12px}
-.btn{display:block;background:#25D366;color:#fff;text-decoration:none;padding:13px;border-radius:12px;font-weight:700;font-size:15px;transition:.2s}
-.btn:hover{background:#128C7E}
+.btn{display:block;background:#0a1931;color:#fff;text-decoration:none;padding:13px;border-radius:12px;font-weight:700;font-size:15px}
+.btn:hover{background:#c8a951;color:#0a1931}
 .why{background:#fff;border-top:1px solid #f0e6cc;border-bottom:1px solid #f0e6cc;padding:35px 18px;text-align:center}
 .why h2{color:#0a1931;margin:0 0 20px;font-size:26px}
 .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;max-width:1000px;margin:auto}
 .why-grid div{background:#fdfaf5;border:1px solid #f0e6cc;border-radius:16px;padding:18px}
-.why-grid b{color:#0a1931;display:block;margin-bottom:6px}
-footer{background:#0a1931;color:#d8d8d8;text-align:center;padding:30px 15px}
-footer a{color:#0a1931;background:#fff;padding:12px 26px;border-radius:10px;text-decoration:none;font-weight:800;display:inline-block;margin-top:12px}
+footer{background:#0a1931;color:#d8d8d8;text-align:center;padding:30px 15px;margin-bottom:80px}
+.float-wa{position:fixed;bottom:20px;left:20px;right:20px;z-index:9999;display:flex;gap:10px;justify-content:center}
+.float-wa a{flex:1;max-width:350px;text-align:center;padding:16px;border-radius:50px;text-decoration:none;font-weight:800;font-size:17px;box-shadow:0 8px 25px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;gap:8px}
+.wa{background:#25D366;color:#fff;animation:float 2s infinite}
+.call{background:#fff;color:#0a1931;border:2px solid #0a1931}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 </style>
 </head>
 <body>
 <header>
 <h1>خزائن غرف نوم عصرية</h1>
 <div class="gold-line"></div>
-<p>تفصيل ملكي فاخر • تشطيب فندقي • زجاج سيكوريت 10مم • إضاءة LED مخفية</p>
+<p>تفصيل ملكي فاخر • تشطيب فندقي • إضاءة LED</p>
+<div class="offer-badge">🔥 خصم 50% لفترة محدودة - المعاينة مجاناً 🔥</div>
 <div class="badges"><span>✨ تصميم 3D مجاني</span><span>🔨 نجارين محترفين</span><span>🛡️ ضمان 5 سنوات</span><span>🚚 توصيل وتركيب مجاني</span></div>
-<a class="hero-cta" href="https://wa.me/966552547010?text=السلام عليكم، عايز عرض خزانة عصرية">احصل على عرضك الملكي الآن 👑</a>
 </header>
 
 <div class="grid">
-<div class="card"><img src="1.jpg" loading="lazy"><div class="info"><h3>خزانة 6 أبواب - طراز ملكي</h3><div class="desc">مفصلات إيطالية سوفت كلوز • تقسيم ذكي</div><a class="btn" href="https://wa.me/966552547010?text=عايز الخزانة رقم 1">استفسر واتساب 📱</a></div></div>
-<div class="card"><img src="2.jpg" loading="lazy"><div class="info"><h3>دريسنج روم زجاجي فاخر</h3><div class="desc">إضاءة LED • زجاج شفاف مقوى</div><a class="btn" href="https://wa.me/966552547010?text=عايز الدريسنج رقم 2">استفسر واتساب 📱</a></div></div>
-<div class="card"><img src="3.jpg" loading="lazy"><div class="info"><h3>خزانة زاوية - استغلال ذكي</h3><div class="desc">تصميم يوفر المساحة • تشطيب فندقي</div><a class="btn" href="https://wa.me/966552547010?text=عايز خزانة الزاوية رقم 3">استفسر واتساب 📱</a></div></div>
-<div class="card"><img src="4.jpg" loading="lazy"><div class="info"><h3>تسريحة عصرية بإضاءة</h3><div class="desc">مرايا ليد • أدراج مخفية</div><a class="btn" href="https://wa.me/966552547010?text=عايز التسريحة رقم 4">استفسر واتساب 📱</a></div></div>
-<div class="card"><img src="5.jpg" loading="lazy"><div class="info"><h3>غرفة ملابس متكاملة</h3><div class="desc">تفصيل حسب المقاس • خشب أصلي</div><a class="btn" href="https://wa.me/966552547010?text=عايز غرفة الملابس رقم 5">استفسر واتساب 📱</a></div></div>
-<div class="card"><img src="6.jpg" loading="lazy"><div class="info"><h3>خزانة مودرن 4 أبواب</h3><div class="desc">ستايل عصري • ألوان هادئة</div><a class="btn" href="https://wa.me/966552547010?text=عايز الخزانة رقم 6">استفسر واتساب 📱</a></div></div>
-<div class="card"><img src="7.jpg" loading="lazy"><div class="info"><h3>نظام تنظيم احترافي</h3><div class="desc">أدراج وشماعات ورفوف ذكية</div><a class="btn" href="https://wa.me/966552547010?text=عايز التنظيم رقم 7">استفسر واتساب 📱</a></div></div>
+<div class="card"><span class="discount">خصم 50%</span><img src="1.jpg"><div class="info"><h3>خزانة 6 أبواب - ملكية</h3><div class="desc">مفصلات إيطالية • تقسيم ذكي</div><a class="btn" href="https://wa.me/966552547010?text=عايز عرض خصم 50% للخزانة رقم 1">احجز بخصم 50% الآن</a></div></div>
+<div class="card"><span class="discount">خصم 50%</span><img src="2.jpg"><div class="info"><h3>دريسنج روم زجاجي</h3><div class="desc">إضاءة LED • زجاج سيكوريت</div><a class="btn" href="https://wa.me/966552547010?text=عايز عرض خصم 50% رقم 2">احجز بخصم 50% الآن</a></div></div>
+<div class="card"><span class="discount">خصم 50%</span><img src="3.jpg"><div class="info"><h3>خزانة زاوية ذكية</h3><div class="desc">استغلال مساحة • فندقي</div><a class="btn" href="https://wa.me/966552547010?text=عايز عرض خصم 50% رقم 3">احجز بخصم 50% الآن</a></div></div>
+<div class="card"><span class="discount">خصم 50%</span><img src="4.jpg"><div class="info"><h3>تسريحة ملكية بإضاءة</h3><div class="desc">مرايا ليد • أدراج مخفية</div><a class="btn" href="https://wa.me/966552547010?text=عايز عرض خصم 50% رقم 4">احجز بخصم 50% الآن</a></div></div>
+<div class="card"><span class="discount">خصم 50%</span><img src="5.jpg"><div class="info"><h3>غرفة ملابس متكاملة</h3><div class="desc">تفصيل حسب المقاس • خشب أصلي</div><a class="btn" href="https://wa.me/966552547010?text=عايز عرض خصم 50% رقم 5">احجز بخصم 50% الآن</a></div></div>
+<div class="card"><span class="discount">خصم 50%</span><img src="6.jpg"><div class="info"><h3>خزانة مودرن 4 أبواب</h3><div class="desc">ستايل عصري • ألوان هادئة</div><a class="btn" href="https://wa.me/966552547010?text=عايز عرض خصم 50% رقم 6">احجز بخصم 50% الآن</a></div></div>
+<div class="card"><span class="discount">خصم 50%</span><img src="7.jpg"><div class="info"><h3>نظام تنظيم احترافي</h3><div class="desc">أدراج وشماعات ذكية</div><a class="btn" href="https://wa.me/966552547010?text=عايز عرض خصم 50% رقم 7">احجز بخصم 50% الآن</a></div></div>
 </div>
 
-<div class="why">
-<h2>لماذا تختارنا؟</h2>
-<div class="why-grid">
-<div><b>👑 فخامة فندقية</b> تشطيب لا يُقارن مثل الفنادق 5 نجوم</div>
-<div><b>📐 مقاسات دقيقة</b> نرفع المقاس مجاناً ونصمم 3D قبل التنفيذ</div>
-<div><b>🔧 تركيب احترافي</b> فريق متخصص نظافة واتقان</div>
-<div><b>💬 متابعة بعد البيع</b> واتساب مباشر 0552547010</div>
-</div>
+<div class="why"><h2>العرض الملكي - خصم 50% يشمل:</h2><div class="why-grid"><div><b>📐 معاينة مجانية</b> نجيلك لحد البيت</div><div><b>🎨 تصميم 3D</b> تشوف شكلها قبل التنفيذ</div><div><b>🚚 توصيل وتركيب</b> مجاني داخل الرياض</div><div><b>🛡️ ضمان 5 سنوات</b> على كل شيء</div></div></div>
+
+<footer>📍 الرياض - جميع الأحياء | 📞 0552547010<br>العرض ساري حتى نفاذ الكمية</footer>
+
+<div class="float-wa">
+<a class="wa" href="https://wa.me/966552547010?text=السلام عليكم، عايز استفيد من خصم 50%">💬 واتساب - خصم 50%</a>
+<a class="call" href="tel:+966552547010">📞 اتصل الآن</a>
 </div>
 
-<footer>
-📍 الرياض - جميع الأحياء | نخدمك في نفس اليوم<br>
-المعاينة وتصميم 3D مجاناً<br>
-<a href="https://wa.me/966552547010?text=مرحبا، أريد معاينة مجانية لخزائن غرف نوم عصرية">تواصل واتساب الآن - 0552547010</a>
-</footer>
 </body>
 </html>
